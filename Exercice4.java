@@ -15,8 +15,8 @@ class Exercice4 {
         String string2 = "Le 1er nombre saisi n'appartient pas a l'intervalle donne par le plus petit et le plus grand des 2 autres (bornes exclues).";
         String string3 = "Le 1er nombre saisi appartient a l'intervalle donne par le plus petit et le plus grand des 2 autres (bornes inclues).";
         String string4 = "Le 1er nombre saisi n'appartient pas a l'intervalle donne par le plus petit et le plus grand des 2 autres (bornes inclues).";
-        String string5 = ((num1>min) && (num1<max)) : string1 : string2;
-        String string6 = ((num1>=min) && (num1<=max)) : string3 : string4;
+        String string5 = ((num1>min) && (num1<max)) ? string1 : string2;
+        String string6 = ((num1>=min) && (num1<=max)) ? string3 : string4;
         System.out.println(string5);
         System.out.println("Inclure les bornes? Y/N");
         char a = sc.nextChar();
