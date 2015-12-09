@@ -18,19 +18,7 @@ class Exercice4 {
         String string5 = ((num1>min) && (num1<max)) ? string1 : string2;
         String string6 = ((num1>=min) && (num1<=max)) ? string3 : string4;
         System.out.println(string5);
-        System.out.println("Inclure les bornes? Y/N");
-        char a = sc.next().charAt(0);
-        switch (a)
-        {
-            case 'Y':
-                System.out.println(string6);
-                break;
-            case 'N':
-                System.out.println("Ok, a plus tard!");
-                break;
-            default:
-                System.out.println("Veuillez saisir 'Y' ou 'N' la prochaine fois!");
-        }
+        System.out.println(string6);
 	}
 
 }
